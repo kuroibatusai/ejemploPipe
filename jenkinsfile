@@ -4,20 +4,20 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh "/usr/local/opt/maven/bin/mvn clean"
+                sh "/Users/kuroi/Desktop/apache-maven-3.6.3/bin/mvn clean"
             }
         }
 
         stage('test') {
             steps {
-                sh "/usr/local/opt/maven/bin/mvn compile"
+                sh "/Users/kuroi/Desktop/apache-maven-3.6.3/bin/mvn compile"
             }
         }
 
         stage('test2') {
             steps {
                 sh '''
-                    /usr/local/opt/maven/bin/mvn test
+                    /Users/kuroi/Desktop/apache-maven-3.6.3/bin/mvn test
                 '''
             }
         }
