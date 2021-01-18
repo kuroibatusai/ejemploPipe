@@ -14,8 +14,8 @@ public class DiezxcientoTest {
 
 	@Test
 	public void testImpuesto() throws Exception {
-		Diezxciento diezxciento = new Diezxciento();
-		assertEquals(0, diezxciento.impuesto());
+		Diezxciento diezxciento = new Diezxciento(24000000,1800000);
+		assertEquals(144000.0, diezxciento.impuesto(), 0);
 	}
 
 	@Test
